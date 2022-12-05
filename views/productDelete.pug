@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    div.grid-container
+        label Etes-vous certain de vouloir supprimer le produit
+            span #{product.name} ?
+    p
+        button(onclick=products.pop(product)) OUI
+        button NON
